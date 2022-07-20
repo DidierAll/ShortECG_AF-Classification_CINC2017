@@ -5,16 +5,18 @@ This project is inspired from CINC challenge which is aimed to encourage the dev
 
 ![Figure 1. Example of the ECG waveforms](figures/example_waveforms.svg)
 
-In this project, we will start by building a simpler two-class classifier distinguishing between normal sinus rhythm and abnormal rhythm (atrial fibrillation included) by excluding the noisy recordings. We will thus use 7,418 out of the original 8,528 training data recordings. They have been converted into 'npz' format from the original MATLAB V4 WFDB-compliant format. 
+In this project, we start by building a simpler two-class classifier distinguishing between normal sinus rhythm and abnormal rhythm (atrial fibrillation included) by excluding the noisy recordings. We thus used 7,418 out of the original 8,528 training data recordings. They have been converted into 'npz' format from the original MATLAB V4 WFDB-compliant format. 
 
-We will perform the following 
-1. Even though, RR intervals are already provided, we will first build an algorithm to extract RR intervals using the Pan-Tompkins method and measure the accuracy performance of our algorithm.
-2. We will then process and extract features from the RR intervals data for our classifier.
-3. Build and compute the performance of a 2-class random forest classifier
+We performed the following 
+1. Even though, RR intervals are already provided, we first build an algorithm to extract RR intervals using the Pan-Tompkins method and measure the accuracy performance of the algorithm.
+2. We processed and extracted features from the RR intervals data for our classifier.
+3. Build and compute the performance of a 2-class random forest classifier (between Normal and Abnormal (Other and Afib) rhythms)
+4. Build and compute the performance of a 3-class random forest classifier (between Normal, Other and Afib rhythms)
 
-We will eventually take the challenge of 
-1. Performing a grid search for hyperparameter tuning
-2. Comparing different classifiers
-2. Distinguishing between AF from alternative rhythm. This most likely will require extracting features other than RR intervals data, such as the presence/absence of P-wave.
+We then perform additional analyses to help improve the accuracy of the classifier  
+1. Adding more features requiring additional processing and features extraction from the raw signal
+2. Performing a grid search for hyperparameter tuning
+3. Comparing performance comparison among 8 common classifiers which includes hyperparameter tunning for each
+
  
  
