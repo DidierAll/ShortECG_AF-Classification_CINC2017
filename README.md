@@ -16,7 +16,7 @@ We performed the following
 We then perform additional analyses to help improve the accuracy of the classifier  
 1. Adding more features requiring additional processing and features extraction from the raw signal
 2. Performing a grid search for hyperparameter tuning
-3. Comparing performance comparison among 8 common classifiers which includes hyperparameter tunning for each
+3. Comparing performance among 8 common classifiers which includes hyperparameter tunning for each
 
  
  
